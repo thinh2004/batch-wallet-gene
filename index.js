@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 });
 
 rl.question("How many wallets would you like to generate? ", function(numWallets) {
-  const numSeedPhrases = parseInt(numWallets, 10); // number of seed phrases to generate
+  const numSeedPhrases = parseInt(numWallets, 2); // number of seed phrases to generate
   if (isNaN(numSeedPhrases) || numSeedPhrases <= 0) {
     console.log("Please enter a valid positive number.");
     rl.close();
